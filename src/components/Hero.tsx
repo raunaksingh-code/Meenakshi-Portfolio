@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Download, Mail } from "lucide-react";
 
-const typingWords = ["Operations", "Quality Assurance", "Strategy", "Business Intelligence"];
+const typingWords = ["Consulting Professional", "Strategy Enthusiast", "Pharma Graduate"];
 
 export function Hero() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -66,7 +66,7 @@ export function Hero() {
           </h2>
           
           <p className="text-slate-700 max-w-xl text-base md:text-lg leading-relaxed mb-10 font-medium">
-            Turning structured operations into consistent service delivery — bridging quality assurance with robust process re-engineering.
+            Curious about the problem, rigorous with the analysis, and focused on turning ideas into outcomes.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
