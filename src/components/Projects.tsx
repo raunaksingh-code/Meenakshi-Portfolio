@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ExternalLink, FileSpreadsheet, TrendingUp, Tag } from "lucide-react";
+import { ExternalLink, FileSpreadsheet, TrendingUp, Tag, ShieldCheck, UtensilsCrossed } from "lucide-react";
 
 const projects = [
   {
@@ -12,9 +12,23 @@ const projects = [
     description:
       "Data-driven operations dashboard for a capacity-constrained campus gym — diagnosed a 60% evening demand concentration across 131 students and modelled a 25% demand-shift to resolve equipment bottlenecks.",
     image: "/projects/fitsync.png",
+    graphic: null,
     link: "https://optimize-fit-hub.lovable.app/",
     linkLabel: "Visit live app",
     linkIcon: ExternalLink,
+    download: false,
+  },
+  {
+    badge: "LIVE PROJECT",
+    year: "2026",
+    title: "Nestlé — Serve Safe Food",
+    description:
+      "Assessing food safety and hygiene practices among street-food vendors, identifying process gaps and improvement opportunities, and developing structured recommendations to strengthen standardization, compliance, and sustainable adoption.",
+    image: null,
+    graphic: "compliance",
+    link: null,
+    linkLabel: null,
+    linkIcon: null,
     download: false,
   },
   {
@@ -23,6 +37,8 @@ const projects = [
     title: "Walmart Retail Operations Performance Analysis",
     description:
       "Statistical analysis of 6,435 weekly sales records across 45 stores — applied ANOVA, Chi-Square testing, forecasting and correlation analysis to benchmark store performance and quantify holiday sales impact.",
+    image: null,
+    graphic: "chart",
     link: "/projects/SMDM_Walmart_Analysis.xlsx",
     linkLabel: "View report (Excel)",
     linkIcon: FileSpreadsheet,
@@ -34,6 +50,8 @@ const projects = [
     title: "Economic Concepts in Product Positioning",
     description:
       "Applied price elasticity of demand and consumer surplus analysis to optimize pricing for a ₹6,000 venture — achieved 20% profitability and 100% inventory sell-through.",
+    image: null,
+    graphic: "pricing",
     link: null,
     linkLabel: null,
     linkIcon: null,
@@ -51,7 +69,7 @@ export function Projects() {
         </h2>
         <div className="w-12 h-1 bg-gradient-to-r from-[#D0A0A3] to-[#ECCBC9] rounded mb-12" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
@@ -71,7 +89,7 @@ export function Projects() {
                     className="object-cover object-top"
                   />
                 ) : (
-                  <ProjectGraphic variant={project.badge === "ANALYTICS" ? "chart" : "pricing"} />
+                  <ProjectGraphic variant={project.graphic as "chart" | "pricing" | "compliance"} />
                 )}
               </div>
 
@@ -109,7 +127,7 @@ export function Projects() {
   );
 }
 
-function ProjectGraphic({ variant }: { variant: "chart" | "pricing" }) {
+function ProjectGraphic({ variant }: { variant: "chart" | "pricing" | "compliance" }) {
   if (variant === "chart") {
     const bars = [30, 45, 38, 60, 52, 72, 65];
     return (
@@ -122,6 +140,15 @@ function ProjectGraphic({ variant }: { variant: "chart" | "pricing" }) {
           />
         ))}
         <TrendingUp className="absolute top-4 right-4 text-[#8A4B52]" size={20} />
+      </div>
+    );
+  }
+
+  if (variant === "compliance") {
+    return (
+      <div className="w-full h-full flex items-center justify-center relative">
+        <ShieldCheck className="text-[#D0A0A3]" size={64} strokeWidth={1.5} />
+        <UtensilsCrossed className="absolute top-4 right-4 text-[#8A4B52]" size={20} />
       </div>
     );
   }
