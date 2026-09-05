@@ -14,14 +14,14 @@ const awards = [
   {
     icon: Award,
     title: "Employee of the Quarter Award",
-    description: "IDS InfoTech",
+    description: "IDS InfoTech Pvt. Ltd., Mohali",
     year: "Q2 2024",
     gradient: "from-[#ECEBE8] to-[#F5E2E3]",
   },
   {
     icon: GraduationCap,
     title: "Academic Excellence Recognition",
-    description: "ISF College of Pharmacy",
+    description: "ISF College of Pharmacy, Moga",
     year: "2023",
     gradient: "from-[#ECCBC9] to-[#E0C5C4]",
   },
