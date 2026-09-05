@@ -78,13 +78,6 @@ export function Hero() {
               <Download size={18} />
               Download Resume
             </a>
-            <a 
-              href="#contact" 
-              className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-white/60 border border-white/80 text-slate-900 text-sm font-bold rounded-full hover:bg-white transition-all backdrop-blur-sm"
-            >
-              <Mail size={18} />
-              Contact Me
-            </a>
           </div>
         </div>
 
