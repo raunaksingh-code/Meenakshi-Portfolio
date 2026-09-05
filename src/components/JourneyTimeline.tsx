@@ -9,7 +9,7 @@ const journeySteps = [
   { id: 3, title: "INDUSTRIAL INTERNSHIP", role: "Manufacturing & QA", org: "Scott Edil Advance Research Laboratories & Education Ltd.", impact: ["Exposure to tablet & capsule manufacturing", "QC/QA systems & manufacturing compliance"], period: null },
   { id: 4, title: "PROCESS ASSOCIATE / MEDICAL SCRIBE", role: null, org: "IDS InfoTech Pvt. Ltd.", impact: ["Clinical documentation & healthcare operations", "EHRs: Cerner, Epic, NextGen, eCW"], period: "May 2023 – Apr 2025" },
   { id: 5, title: "PATIENT COORDINATOR", role: "Client Coordination", org: "Digimedicus Pvt. Ltd.", impact: ["US insurance & billing operations", "Patient workflows & client coordination"], period: "Apr 2025 – Apr 2026" },
-  { id: 6, title: "PGPM", role: "Consulting & Operations", org: "Great Lakes Institute of Management, Gurugram", impact: ["Majors: Consulting & Operations", "Business problem-solving, Analytics, Operational Excellence"], period: "Present" },
+  { id: 6, title: "PGPM", role: "Consulting & Operations", org: "Great Lakes Institute of Management, Gurugram", impact: ["Majors: Consulting & Operations", "Building skills in Business problem-solving, Analytics, Operational Excellence"], period: "Present" },
 ];
 
 export function JourneyTimeline() {
