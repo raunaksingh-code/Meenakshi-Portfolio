@@ -36,21 +36,21 @@ export function Hero() {
   }, [currentText, isDeleting, currentWordIndex]);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center bg-gradient-to-br from-rose-50 via-teal-50 to-violet-100 overflow-hidden pt-24 pb-32">
+    <section className="relative w-full min-h-screen flex items-center bg-gradient-to-br from-[#F5E2E3] via-[#ECCBC9] to-[#E0C5C4] overflow-hidden pt-24 pb-32">
       
       {/* Decorative floating dots/stars in dark for light bg */}
-      <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-slate-400/20 rounded-full blur-[1px]" />
-      <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-slate-400/30 rounded-full blur-[1px]" />
-      <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-slate-400/20 rounded-full blur-[2px]" />
-      <div className="absolute top-2/3 right-1/3 w-3 h-3 bg-slate-400/20 rounded-full blur-[1px]" />
+      <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-[#D0A0A3]/30 rounded-full blur-[1px]" />
+      <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-[#D0A0A3]/40 rounded-full blur-[1px]" />
+      <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-[#D0A0A3]/30 rounded-full blur-[2px]" />
+      <div className="absolute top-2/3 right-1/3 w-3 h-3 bg-[#D0A0A3]/30 rounded-full blur-[1px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
         
         {/* Left Column - Text Content */}
         <div className="flex-1 flex flex-col items-center text-center lg:items-start lg:text-left">
           
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/5 border border-slate-900/10 backdrop-blur-md mb-8">
-            <span className="text-amber-500 text-sm">✦</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/40 border border-white/60 backdrop-blur-md mb-8">
+            <span className="text-[#D0A0A3] text-sm">✦</span>
             <span className="text-slate-800 text-xs md:text-sm font-semibold tracking-widest uppercase">
               PGPM 2026-27 • GREAT LAKES GURGAON
             </span>
@@ -60,12 +60,12 @@ export function Hero() {
             Meenakshi
           </h1>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-700 mb-6 font-sans h-12 flex items-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6 font-sans h-12 flex items-center">
             {currentText}
-            <span className="animate-pulse ml-1 inline-block w-1 h-8 bg-slate-700"></span>
+            <span className="animate-pulse ml-1 inline-block w-1 h-8 bg-slate-800"></span>
           </h2>
           
-          <p className="text-slate-600 max-w-xl text-base md:text-lg leading-relaxed mb-10 font-medium">
+          <p className="text-slate-700 max-w-xl text-base md:text-lg leading-relaxed mb-10 font-medium">
             Turning structured operations into consistent service delivery — bridging quality assurance with robust process re-engineering.
           </p>
           
@@ -80,7 +80,7 @@ export function Hero() {
             </a>
             <a 
               href="#contact" 
-              className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-white/50 border border-slate-200 text-slate-900 text-sm font-bold rounded-full hover:bg-white transition-all backdrop-blur-sm"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-white/60 border border-white/80 text-slate-900 text-sm font-bold rounded-full hover:bg-white transition-all backdrop-blur-sm"
             >
               <Mail size={18} />
               Contact Me
@@ -90,8 +90,8 @@ export function Hero() {
 
         {/* Right Column - Image */}
         <div className="flex-1 flex justify-center lg:justify-end w-full max-w-sm lg:max-w-none">
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-2 bg-gradient-to-tr from-rose-300 via-transparent to-violet-300 animate-spin-slow rounded-full shadow-[0_0_50px_rgba(139,92,246,0.15)]">
-            <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-white bg-white animate-reverse-spin">
+          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-2 bg-gradient-to-tr from-[#D0A0A3] via-transparent to-[#D0A0A3] animate-spin-slow rounded-full shadow-[0_0_50px_rgba(208,160,163,0.3)]">
+            <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-[#ECEBE8] bg-[#ECEBE8] animate-reverse-spin">
               <Image 
                 src="/profile.png" 
                 alt="Meenakshi Profile" 
