@@ -83,7 +83,7 @@ export function Hero() {
 
         {/* Right Column - Image */}
         <div className="flex-1 flex justify-center lg:justify-end w-full max-w-sm lg:max-w-none">
-          <div className="relative w-72 h-72 md:w-96 md:h-96 animate-float">
+          <div className="relative w-64 h-80 md:w-80 md:h-[26rem] animate-float">
             {/* Glow behind the ring */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#D0A0A3] to-[#ECCBC9] blur-2xl opacity-60" />
             {/* Gradient ring */}
