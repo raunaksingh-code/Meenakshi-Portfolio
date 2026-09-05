@@ -5,7 +5,7 @@ import { Mail, Phone } from "lucide-react";
 
 export function Contact() {
   return (
-    <footer className="relative w-full py-32 bg-[#0A0A0A] text-white flex flex-col items-center overflow-hidden">
+    <footer className="relative w-full py-32 bg-gradient-to-br from-[#1a0a0d] via-[#3d1a20] to-[#0A0A0A] text-white flex flex-col items-center overflow-hidden">
       {/* Background Grid */}
       <div
         className="absolute inset-0 z-0 opacity-20 pointer-events-none"
