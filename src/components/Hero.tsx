@@ -83,9 +83,11 @@ export function Hero() {
 
         {/* Right Column - Image */}
         <div className="flex-1 flex justify-center lg:justify-end w-full max-w-sm lg:max-w-none">
-          <div className="relative w-64 h-80 md:w-80 md:h-[26rem] animate-float">
-            {/* Glow behind the ring */}
+          <div className="relative w-72 h-72 md:w-96 md:h-96 animate-float">
+            {/* Glow behind the sphere */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#D0A0A3] to-[#ECCBC9] blur-2xl opacity-60" />
+            {/* Grounding shadow beneath the sphere */}
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-2/3 h-6 bg-black/25 blur-xl rounded-full" />
             {/* Gradient ring */}
             <div className="relative w-full h-full rounded-full p-2 bg-gradient-to-br from-[#D0A0A3] via-[#ECCBC9] to-[#D0A0A3] shadow-2xl">
               {/* White gap */}
@@ -99,6 +101,16 @@ export function Hero() {
                     className="object-cover object-top"
                     priority
                   />
+                  {/* 3D sphere shading: top-left light, bottom-right shadow */}
+                  <div
+                    className="pointer-events-none absolute inset-0 rounded-full"
+                    style={{
+                      background:
+                        "radial-gradient(circle at 30% 25%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 40%), radial-gradient(circle at 75% 82%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 55%)",
+                    }}
+                  />
+                  {/* Glossy highlight */}
+                  <div className="pointer-events-none absolute top-[10%] left-[16%] w-12 h-7 md:w-16 md:h-9 bg-white/70 blur-md rounded-full -rotate-[24deg]" />
                 </div>
               </div>
             </div>
