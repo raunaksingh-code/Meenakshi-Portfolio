@@ -10,7 +10,7 @@ export function Hero() {
         <div className="flex-1 flex flex-col items-center text-center lg:items-start lg:text-left">
           
           <div className="text-[var(--color-accent-gold)] text-xs md:text-sm font-bold tracking-widest uppercase mb-4">
-            PGDM 2025-27 • GREAT LAKES INSTITUTE OF MANAGEMENT, GURGAON
+            PGPM 2026-27 • GREAT LAKES INSTITUTE OF MANAGEMENT, GURGAON
           </div>
           
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-[#0F172A] mb-4">
