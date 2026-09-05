@@ -29,7 +29,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <section className="relative w-full py-24 bg-white overflow-hidden flex flex-col items-center">
+    <section id="skills" className="relative w-full py-24 bg-white overflow-hidden flex flex-col items-center scroll-mt-24">
       <div className="w-full max-w-5xl px-8">
         <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#D0A0A3]">Toolkit</span>
         <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 mt-2 mb-4">

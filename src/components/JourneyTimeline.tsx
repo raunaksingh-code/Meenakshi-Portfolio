@@ -16,7 +16,7 @@ export function JourneyTimeline() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative w-full bg-background py-24">
+    <section id="journey" className="relative w-full bg-background py-24 scroll-mt-24">
       {/* Section header */}
       <div className="px-8 md:px-16 mb-16">
         <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#D0A0A3]">Career Path</span>
