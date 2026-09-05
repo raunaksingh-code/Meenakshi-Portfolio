@@ -5,7 +5,7 @@ import { ExperienceCaseStudy } from "@/components/ExperienceCaseStudy";
 import { ProjectUniverse } from "@/components/ProjectUniverse";
 import { AnalyticsLab } from "@/components/AnalyticsLab";
 import { AchievementGallery } from "@/components/AchievementGallery";
-import { SkillConstellation } from "@/components/SkillConstellation";
+import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <ProjectUniverse />
       <AnalyticsLab />
       <AchievementGallery />
-      <SkillConstellation />
+      <Skills />
       <Contact />
     </main>
   );
