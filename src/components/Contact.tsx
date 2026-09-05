@@ -5,19 +5,19 @@ import { Mail, Phone } from "lucide-react";
 
 export function Contact() {
   return (
-    <footer className="relative w-full py-32 bg-gradient-to-br from-[#1a0a0d] via-[#3d1a20] to-[#0A0A0A] text-white flex flex-col items-center overflow-hidden">
+    <footer className="relative w-full py-32 bg-gradient-to-br from-[#F5E2E3] via-[#ECCBC9] to-[#D0A0A3] text-slate-900 flex flex-col items-center overflow-hidden">
       {/* Background Grid */}
       <div
-        className="absolute inset-0 z-0 opacity-20 pointer-events-none"
+        className="absolute inset-0 z-0 opacity-25 pointer-events-none"
         style={{
-          backgroundImage: "linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px)",
+          backgroundImage: "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
           backgroundSize: "4rem 4rem"
         }}
       />
 
       <div className="relative z-10 w-full max-w-3xl mx-auto px-8">
         <motion.span
-          className="block text-xs font-bold tracking-[0.2em] uppercase text-[#D0A0A3]"
+          className="block text-xs font-bold tracking-[0.2em] uppercase text-[#8A4B52]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -26,7 +26,7 @@ export function Contact() {
         </motion.span>
 
         <motion.h2
-          className="font-heading text-5xl md:text-6xl font-extrabold tracking-tight mt-2 mb-6"
+          className="font-heading text-5xl md:text-6xl font-extrabold tracking-tight mt-2 mb-6 text-slate-900"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -35,10 +35,10 @@ export function Contact() {
           Contact
         </motion.h2>
 
-        <div className="w-16 h-1 bg-gradient-to-r from-[#D0A0A3] to-[#ECCBC9] rounded mb-10" />
+        <div className="w-16 h-1 bg-gradient-to-r from-[#8A4B52] to-[#D0A0A3] rounded mb-10" />
 
         <motion.p
-          className="text-white/70 max-w-xl text-base md:text-lg leading-relaxed mb-12"
+          className="text-slate-700 max-w-xl text-base md:text-lg leading-relaxed mb-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -58,7 +58,7 @@ export function Contact() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 text-white/30 text-xs font-mono tracking-widest uppercase">
+      <div className="absolute bottom-8 text-slate-700/60 text-xs font-mono tracking-widest uppercase">
         © {new Date().getFullYear()} Meenakshi. All rights reserved.
       </div>
     </footer>
@@ -73,10 +73,10 @@ function ContactRow({ icon, label, href }: { icon: React.ReactNode; label: strin
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
     >
-      <div className="flex items-center justify-center w-11 h-11 rounded-full bg-[#D0A0A3]/15 border border-[#D0A0A3]/30 text-[#D0A0A3] shrink-0 transition-colors group-hover:bg-[#D0A0A3]/25">
+      <div className="flex items-center justify-center w-11 h-11 rounded-full bg-white/60 border border-[#8A4B52]/30 text-[#8A4B52] shrink-0 transition-colors group-hover:bg-white/90">
         {icon}
       </div>
-      <span className="text-white/90 font-medium break-all">{label}</span>
+      <span className="text-slate-800 font-medium break-all">{label}</span>
     </motion.div>
   );
 
