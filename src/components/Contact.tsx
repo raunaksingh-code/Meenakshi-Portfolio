@@ -50,12 +50,13 @@ export function Contact() {
   );
 }
 
-function ContactLink({ href, icon, label, primary = false }: { href: string, icon: React.ReactNode, label: string, primary?: boolean }) {
+function ContactLink({ href, icon, label, primary = false, download }: { href: string, icon: React.ReactNode, label: string, primary?: boolean, download?: string }) {
   return (
     <motion.a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      download={download}
       className={`group relative flex items-center gap-3 px-8 py-4 rounded-full font-bold tracking-wide transition-all duration-300 overflow-hidden ${
         primary 
           ? "bg-primary text-white hover:shadow-[0_0_30px_rgba(0,82,255,0.6)]" 
