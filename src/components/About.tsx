@@ -19,7 +19,7 @@ const highlights = [
   {
     icon: MapPin,
     title: "Gurgaon, India",
-    subtitle: "Open to consulting & strategy roles",
+    subtitle: "Open to consulting, strategy, operations & other relevant roles",
     color: "#D0A0A3",
   },
 ];
