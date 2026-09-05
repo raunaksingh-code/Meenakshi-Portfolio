@@ -2,17 +2,20 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ExternalLink, TrendingUp, Tag } from "lucide-react";
+import { ExternalLink, FileSpreadsheet, TrendingUp, Tag } from "lucide-react";
 
 const projects = [
   {
-    badge: "APP · LIVE PROJECT",
+    badge: "APP",
     year: "2026",
     title: "FitSync — Smart Campus Gym Scheduling",
     description:
       "Data-driven operations dashboard for a capacity-constrained campus gym — diagnosed a 60% evening demand concentration across 131 students and modelled a 25% demand-shift to resolve equipment bottlenecks.",
     image: "/projects/fitsync.png",
     link: "https://optimize-fit-hub.lovable.app/",
+    linkLabel: "Visit live app",
+    linkIcon: ExternalLink,
+    download: false,
   },
   {
     badge: "ANALYTICS",
@@ -20,15 +23,21 @@ const projects = [
     title: "Walmart Retail Operations Performance Analysis",
     description:
       "Statistical analysis of 6,435 weekly sales records across 45 stores — applied ANOVA, Chi-Square testing, forecasting and correlation analysis to benchmark store performance and quantify holiday sales impact.",
-    link: null,
+    link: "/projects/SMDM_Walmart_Analysis.xlsx",
+    linkLabel: "View report (Excel)",
+    linkIcon: FileSpreadsheet,
+    download: true,
   },
   {
     badge: "STRATEGY",
-    year: "2025",
+    year: "2026",
     title: "Economic Concepts in Product Positioning",
     description:
       "Applied price elasticity of demand and consumer surplus analysis to optimize pricing for a ₹6,000 venture — achieved 20% profitability and 100% inventory sell-through.",
     link: null,
+    linkLabel: null,
+    linkIcon: null,
+    download: false,
   },
 ];
 
@@ -79,15 +88,16 @@ export function Projects() {
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-1">{project.description}</p>
 
-                {project.link && (
+                {project.link && project.linkIcon && (
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    download={project.download || undefined}
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#8A4B52] hover:text-[#D0A0A3] transition-colors w-fit"
                   >
-                    Visit live app
-                    <ExternalLink size={14} />
+                    {project.linkLabel}
+                    <project.linkIcon size={14} />
                   </a>
                 )}
               </div>
