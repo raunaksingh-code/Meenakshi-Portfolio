@@ -39,7 +39,7 @@ export function Contact() {
           <ContactLink href="mailto:contact@example.com" icon={<Mail />} label="Email" primary />
           <ContactLink href="https://linkedin.com" icon={<Globe />} label="LinkedIn" />
           <ContactLink href="https://github.com" icon={<Code />} label="GitHub" />
-          <ContactLink href="/Resume.pdf" icon={<FileText />} label="Resume" />
+          <ContactLink href="/Meenakshi_CV.docx" download="Meenakshi_CV.docx" icon={<FileText />} label="Resume" />
         </div>
       </div>
       
