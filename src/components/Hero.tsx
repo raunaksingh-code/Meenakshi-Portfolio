@@ -83,16 +83,25 @@ export function Hero() {
 
         {/* Right Column - Image */}
         <div className="flex-1 flex justify-center lg:justify-end w-full max-w-sm lg:max-w-none">
-          <div className="relative w-72 md:w-96 animate-float drop-shadow-2xl">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 rounded-full bg-white ring-8 ring-white shadow-2xl" />
-            <Image
-              src="/profile.png"
-              alt="Meenakshi Profile"
-              width={400}
-              height={500}
-              className="relative z-10 object-contain w-full h-auto"
-              priority
-            />
+          <div className="relative w-72 h-72 md:w-96 md:h-96 animate-float">
+            {/* Glow behind the ring */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#D0A0A3] to-[#ECCBC9] blur-2xl opacity-60" />
+            {/* Gradient ring */}
+            <div className="relative w-full h-full rounded-full p-2 bg-gradient-to-br from-[#D0A0A3] via-[#ECCBC9] to-[#D0A0A3] shadow-2xl">
+              {/* White gap */}
+              <div className="w-full h-full rounded-full bg-white p-2">
+                {/* Photo */}
+                <div className="relative w-full h-full rounded-full overflow-hidden">
+                  <Image
+                    src="/profile.png"
+                    alt="Meenakshi Profile"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
