@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Globe, Code, FileText } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export function Contact() {
   return (
@@ -14,35 +14,50 @@ export function Contact() {
           backgroundSize: "4rem 4rem"
         }}
       />
-      
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-8 text-center flex flex-col items-center">
-        <motion.h2 
-          className="text-5xl md:text-7xl font-heading font-extrabold tracking-tight mb-6"
-          initial={{ opacity: 0, y: 30 }}
+
+      <div className="relative z-10 w-full max-w-3xl mx-auto px-8">
+        <motion.span
+          className="block text-xs font-bold tracking-[0.2em] uppercase text-[#D0A0A3]"
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          LET'S BUILD<br/><span className="text-primary">WHAT'S NEXT.</span>
+          Get In Touch
+        </motion.span>
+
+        <motion.h2
+          className="font-heading text-5xl md:text-6xl font-extrabold tracking-tight mt-2 mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+        >
+          Contact
         </motion.h2>
-        
-        <motion.p 
-          className="text-lg text-white/70 max-w-2xl font-light mb-16"
+
+        <div className="w-16 h-1 bg-gradient-to-r from-[#D0A0A3] to-[#ECCBC9] rounded mb-10" />
+
+        <motion.p
+          className="text-white/70 max-w-xl text-base md:text-lg leading-relaxed mb-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          Interested in finance, strategy, analytics, technology, and the future of business.
+          Open to conversations around operations, strategy and consulting roles, as well as collaboration on applied projects.
         </motion.p>
 
-        <div className="flex flex-col md:flex-row gap-6 items-center">
-          <ContactLink href="mailto:contact@example.com" icon={<Mail />} label="Email" primary />
-          <ContactLink href="https://linkedin.com" icon={<Globe />} label="LinkedIn" />
-          <ContactLink href="https://github.com" icon={<Code />} label="GitHub" />
-          <ContactLink href="/Meenakshi_CV.docx" download="Meenakshi_CV.docx" icon={<FileText />} label="Resume" />
+        <div className="flex flex-col gap-6">
+          <ContactRow icon={<Mail size={20} />} label="meenakshibansal1701@gmail.com" href="mailto:meenakshibansal1701@gmail.com" />
+          <ContactRow icon={<Phone size={20} />} label="965****208" />
+          <ContactRow
+            icon={<LinkedInIcon />}
+            label="www.linkedin.com/in/meenakshi-bansal-a5a05622a"
+            href="https://www.linkedin.com/in/meenakshi-bansal-a5a05622a"
+          />
         </div>
       </div>
-      
+
       <div className="absolute bottom-8 text-white/30 text-xs font-mono tracking-widest uppercase">
         © {new Date().getFullYear()} Meenakshi. All rights reserved.
       </div>
@@ -50,29 +65,34 @@ export function Contact() {
   );
 }
 
-function ContactLink({ href, icon, label, primary = false, download }: { href: string, icon: React.ReactNode, label: string, primary?: boolean, download?: string }) {
-  return (
-    <motion.a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      download={download}
-      className={`group relative flex items-center gap-3 px-8 py-4 rounded-full font-bold tracking-wide transition-all duration-300 overflow-hidden ${
-        primary 
-          ? "bg-primary text-white hover:shadow-[0_0_30px_rgba(0,82,255,0.6)]" 
-          : "bg-white/5 border border-white/20 text-white hover:bg-white/10 hover:border-white/40"
-      }`}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
+function ContactRow({ icon, label, href }: { icon: React.ReactNode; label: string; href?: string }) {
+  const content = (
+    <motion.div
+      className="flex items-center gap-4 group"
+      initial={{ opacity: 0, x: -12 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
     >
-      <div className="relative z-10 flex items-center gap-3">
+      <div className="flex items-center justify-center w-11 h-11 rounded-full bg-[#D0A0A3]/15 border border-[#D0A0A3]/30 text-[#D0A0A3] shrink-0 transition-colors group-hover:bg-[#D0A0A3]/25">
         {icon}
-        <span>{label}</span>
-        {primary && <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
       </div>
-      {primary && (
-        <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out" />
-      )}
-    </motion.a>
+      <span className="text-white/90 font-medium break-all">{label}</span>
+    </motion.div>
+  );
+
+  if (!href) return content;
+
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className="w-fit">
+      {content}
+    </a>
+  );
+}
+
+function LinkedInIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.475-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.114 20.452H3.558V9h3.556v11.452z" />
+    </svg>
   );
 }
