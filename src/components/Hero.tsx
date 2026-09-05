@@ -71,8 +71,8 @@ export function Hero() {
           
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <a 
-              href="/Resume.pdf" 
-              target="_blank"
+              href="/Meenakshi_CV.docx" 
+              download="Meenakshi_CV.docx"
               className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 bg-slate-900 text-white text-sm font-bold rounded-full hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               <Download size={18} />
