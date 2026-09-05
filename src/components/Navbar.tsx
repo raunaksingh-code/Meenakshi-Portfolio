@@ -16,7 +16,6 @@ export function Navbar() {
           <Link href="#projects" className="hover:text-slate-900 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-slate-900 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Projects</Link>
           <Link href="#skills" className="hover:text-slate-900 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-slate-900 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Skills</Link>
           <Link href="#achievements" className="hover:text-slate-900 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-slate-900 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Achievements</Link>
-          <Link href="#journey" className="hover:text-slate-900 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-slate-900 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Education</Link>
           <Link href="#contact" className="hover:text-slate-900 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-slate-900 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">Contact</Link>
         </nav>
 
