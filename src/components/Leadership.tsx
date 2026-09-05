@@ -18,7 +18,7 @@ const leadership = [
     title: "Class Representative",
     org: "ISF College of Pharmacy",
     period: "2019-23",
-    description: "Liaison between the student body and administration.",
+    description: "Liaison between the student body and administration",
   },
   {
     icon: Briefcase,
@@ -34,7 +34,7 @@ const leadership = [
     title: "Karma Yoga Volunteer",
     org: "Rural school, Gurgaon",
     period: null,
-    description: "Volunteered with peers on foundational learning and mentoring sessions of primary school students.",
+    description: "Volunteered with peers on foundational learning and mentoring sessions of primary school students",
   },
 ];
 
@@ -71,7 +71,7 @@ export function Leadership() {
                     <h3 className="font-heading font-bold text-slate-900 leading-snug">{item.title}</h3>
                     <p className="text-sm font-semibold mt-0.5" style={{ color: item.color }}>
                       {item.org}
-                      {item.period && <span className="text-slate-400 font-medium"> &middot; {item.period}</span>}
+                      {item.period && <span className="text-slate-400 font-medium"> ({item.period})</span>}
                     </p>
                     {item.description && (
                       <p className="text-sm text-slate-500 leading-relaxed mt-2">{item.description}</p>
