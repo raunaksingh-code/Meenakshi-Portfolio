@@ -4,12 +4,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const journeySteps = [
-  { id: 1, title: "10TH GRADE", role: "10 CGPA | CBSE Board", org: "DAV Public School, Kotkapura", impact: "Built a strong academic foundation." },
-  { id: 2, title: "12TH GRADE", role: "78.6% | CBSE Board", org: "DCM International School, Kotkapura", impact: "Completed higher secondary education." },
-  { id: 3, title: "INDUSTRIAL INTERNSHIP", role: "Manufacturing & QA", org: "Scott Edil Advance Research Laboratories & Education Ltd.", impact: "Exposure to tablet & capsule manufacturing; QC/QA systems & manufacturing compliance." },
-  { id: 4, title: "PROCESS ASSOCIATE / MEDICAL SCRIBE", role: "Healthcare Operations", org: "IDS InfoTech Pvt. Ltd.", impact: "Clinical documentation & healthcare operations across EHRs: Cerner, Epic, NextGen, eCW (May 2023 – Apr 2025)." },
-  { id: 5, title: "PATIENT COORDINATOR", role: "Client Coordination", org: "Digimedicus Pvt. Ltd.", impact: "US insurance & billing operations; patient workflows & client coordination (Apr 2025 – Apr 2026)." },
-  { id: 6, title: "PGPM", role: "Consulting & Operations", org: "Great Lakes Institute of Management, Gurugram", impact: "Building skills in business problem-solving, analytics & operational excellence. (Present)" },
+  { id: 1, title: "10TH GRADE", role: "10 CGPA | CBSE Board", org: "DAV Public School, Kotkapura", impact: ["Built a strong academic foundation."] },
+  { id: 2, title: "12TH GRADE", role: "78.6% | CBSE Board", org: "DCM International School, Kotkapura", impact: ["Completed higher secondary education."] },
+  { id: 3, title: "INDUSTRIAL INTERNSHIP", role: "Manufacturing & QA", org: "Scott Edil Advance Research Laboratories & Education Ltd.", impact: ["Exposure to tablet & capsule manufacturing", "QC/QA systems & manufacturing compliance"] },
+  { id: 4, title: "PROCESS ASSOCIATE / MEDICAL SCRIBE", role: "Healthcare Operations", org: "IDS InfoTech Pvt. Ltd.", impact: ["Clinical documentation & healthcare operations", "EHRs: Cerner, Epic, NextGen, eCW", "May 2023 – Apr 2025"] },
+  { id: 5, title: "PATIENT COORDINATOR", role: "Client Coordination", org: "Digimedicus Pvt. Ltd.", impact: ["US insurance & billing operations", "Patient workflows & client coordination", "Apr 2025 – Apr 2026"] },
+  { id: 6, title: "PGPM", role: "Consulting & Operations", org: "Great Lakes Institute of Management, Gurugram", impact: ["Majors: Consulting & Operations", "Business problem-solving, Analytics, Operational Excellence", "Present"] },
 ];
 
 export function JourneyTimeline() {
@@ -75,7 +75,11 @@ export function JourneyTimeline() {
                 <div className="bg-white border border-[#ECCBC9] rounded-xl p-4 shadow-md">
                   <p className="text-[10px] text-[#D0A0A3] font-bold uppercase tracking-wider mb-1">{step.role}</p>
                   <p className="text-sm font-semibold text-slate-800 mb-1">{step.org}</p>
-                  <p className="text-xs text-slate-500 leading-relaxed">{step.impact}</p>
+                  <ul className="text-xs text-slate-500 leading-relaxed list-disc list-outside pl-3 space-y-1">
+                    {step.impact.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             </div>
