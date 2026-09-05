@@ -4,8 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const journeySteps = [
-  { id: 1, title: "10TH GRADE", role: "10 CGPA | CBSE Board", org: "DAV Public School, Kotkapura", impact: ["Built a strong academic foundation."], period: null },
-  { id: 2, title: "12TH GRADE", role: "78.6% | CBSE Board", org: "DCM International School, Kotkapura", impact: ["Completed higher secondary education."], period: null },
+  { id: 1, title: "10TH GRADE", role: "10 CGPA | CBSE Board", org: "DAV Public School, Kotkapura", impact: ["Built a strong academic foundation"], period: null },
+  { id: 2, title: "12TH GRADE", role: "78.6% | CBSE Board", org: "DCM International School, Kotkapura", impact: ["Completed higher secondary education"], period: null },
   { id: 3, title: "INDUSTRIAL INTERNSHIP", role: "Manufacturing & QA", org: "Scott Edil Advance Research Laboratories & Education Ltd.", impact: ["Exposure to tablet & capsule manufacturing", "QC/QA systems & manufacturing compliance"], period: null },
   { id: 4, title: "PROCESS ASSOCIATE / MEDICAL SCRIBE", role: null, org: "IDS InfoTech Pvt. Ltd.", impact: ["Clinical documentation & healthcare operations", "EHRs: Cerner, Epic, NextGen, eCW"], period: "May 2023 – Apr 2025" },
   { id: 5, title: "PATIENT COORDINATOR", role: "Client Coordination", org: "Digimedicus Pvt. Ltd.", impact: ["US insurance & billing operations", "Patient workflows & client coordination"], period: "Apr 2025 – Apr 2026" },
