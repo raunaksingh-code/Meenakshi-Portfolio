@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { JourneyTimeline } from "@/components/JourneyTimeline";
 import { Skills } from "@/components/Skills";
+import { Awards } from "@/components/Awards";
 import { Leadership } from "@/components/Leadership";
 import { Contact } from "@/components/Contact";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <JourneyTimeline />
       <Skills />
+      <Awards />
       <Leadership />
       <Contact />
     </main>
