@@ -83,16 +83,15 @@ export function Hero() {
 
         {/* Right Column - Image */}
         <div className="flex-1 flex justify-center lg:justify-end w-full max-w-sm lg:max-w-none">
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-2 bg-gradient-to-tr from-[#D0A0A3] via-transparent to-[#D0A0A3] animate-spin-slow rounded-full shadow-[0_0_50px_rgba(208,160,163,0.3)]">
-            <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-[#ECEBE8] bg-[#ECEBE8] animate-reverse-spin">
-              <Image 
-                src="/profile.png" 
-                alt="Meenakshi Profile" 
-                fill 
-                className="object-cover"
-                priority
-              />
-            </div>
+          <div className="relative w-72 md:w-96 animate-float drop-shadow-2xl">
+            <Image 
+              src="/profile.png" 
+              alt="Meenakshi Profile" 
+              width={400}
+              height={500}
+              className="object-contain w-full h-auto"
+              priority
+            />
           </div>
         </div>
 
