@@ -84,12 +84,13 @@ export function Hero() {
         {/* Right Column - Image */}
         <div className="flex-1 flex justify-center lg:justify-end w-full max-w-sm lg:max-w-none">
           <div className="relative w-72 md:w-96 animate-float drop-shadow-2xl">
-            <Image 
-              src="/profile.png" 
-              alt="Meenakshi Profile" 
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 rounded-full bg-white ring-8 ring-white shadow-2xl" />
+            <Image
+              src="/profile.png"
+              alt="Meenakshi Profile"
               width={400}
               height={500}
-              className="object-contain w-full h-auto"
+              className="relative z-10 object-contain w-full h-auto"
               priority
             />
           </div>
