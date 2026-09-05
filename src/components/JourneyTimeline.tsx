@@ -4,14 +4,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const journeySteps = [
-  { id: 1, title: "ACADEMICS", role: "Foundation", org: "University", impact: "Built strong analytical fundamentals." },
-  { id: 2, title: "INDUSTRIAL INTERN", role: "Quality Assurance", org: "Scott Edil Labs", impact: "Mapped QC/QA systems & manufacturing compliance." },
-  { id: 3, title: "PROCESS ASSOCIATE", role: "Quality Control", org: "IDS InfoTech Pvt. Ltd.", impact: "Governed high-volume data & SLA adherence (Apr 2023 – Apr 2025)." },
-  { id: 4, title: "PATIENT COORDINATOR", role: "Operations", org: "Digimedicus Pvt. Ltd.", impact: "Reduced turnaround time by 30% & improved CSAT (Apr 2025 – May 2026)." },
-  { id: 5, title: "PGPM", role: "Post Graduate", org: "Great Lakes Institute of Management", impact: "Specializing in Operations & Analytics." },
-  { id: 6, title: "CAPACITY OPTIMIZATION", role: "Analyst", org: "FitSync Project", impact: "Analyzed campus gym scheduling efficiency." },
-  { id: 7, title: "BUSINESS INTELLIGENCE", role: "Strategist", org: "Walmart Operations", impact: "Statistical performance analysis across 45 stores." },
-  { id: 8, title: "FUTURE LEADERSHIP", role: "Vision", org: "Industry", impact: "Operating at the intersection of Consulting, Strategy & Tech." },
+  { id: 1, title: "10TH GRADE", role: "10 CGPA | CBSE Board", org: "DAV Public School, Kotkapura", impact: "Built a strong academic foundation." },
+  { id: 2, title: "12TH GRADE", role: "78.6% | CBSE Board", org: "DCM International School, Kotkapura", impact: "Completed higher secondary education." },
+  { id: 3, title: "INDUSTRIAL INTERNSHIP", role: "Manufacturing & QA", org: "Scott Edil Advance Research Laboratories & Education Ltd.", impact: "Exposure to tablet & capsule manufacturing; QC/QA systems & manufacturing compliance." },
+  { id: 4, title: "PROCESS ASSOCIATE / MEDICAL SCRIBE", role: "Healthcare Operations", org: "IDS InfoTech Pvt. Ltd.", impact: "Clinical documentation & healthcare operations across EHRs: Cerner, Epic, NextGen, eCW (May 2023 – Apr 2025)." },
+  { id: 5, title: "PATIENT COORDINATOR", role: "Client Coordination", org: "Digimedicus Pvt. Ltd.", impact: "US insurance & billing operations; patient workflows & client coordination (Apr 2025 – Apr 2026)." },
+  { id: 6, title: "PGPM", role: "Consulting & Operations", org: "Great Lakes Institute of Management, Gurugram", impact: "Building skills in business problem-solving, analytics & operational excellence. (Present)" },
 ];
 
 export function JourneyTimeline() {
