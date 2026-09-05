@@ -12,7 +12,7 @@ const highlights = [
   },
   {
     icon: Briefcase,
-    title: "3+ Years of Experience",
+    title: "~3 Years of Experience",
     subtitle: "Operations · Quality Assurance · Process Management",
     color: "#D0A0A3",
   },
@@ -63,7 +63,7 @@ export function About() {
               <span className="font-bold text-slate-900">
                 Consulting & Strategy professional
               </span>{" "}
-              with a background in Pharmaceutical Sciences and 3+ years of
+              with a background in Pharmaceutical Sciences and ~3 years of
               experience in operations and quality assurance. Trained in
               optimizing processes, standardizing workflows, and driving
               execution with ownership — skilled at{" "}
