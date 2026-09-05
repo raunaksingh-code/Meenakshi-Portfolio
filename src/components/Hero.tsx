@@ -36,7 +36,7 @@ export function Hero() {
   }, [currentText, isDeleting, currentWordIndex]);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center bg-gradient-to-br from-[#F5E2E3] via-[#ECCBC9] to-[#E0C5C4] overflow-hidden pt-24 pb-32">
+    <section className="relative w-full min-h-screen flex items-center bg-gradient-to-br from-[#E0C5C4] via-[#D0A0A3] to-[#ECCBC9] overflow-hidden pt-24 pb-32">
       
       {/* Decorative floating dots/stars in dark for light bg */}
       <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-[#D0A0A3]/30 rounded-full blur-[1px]" />
