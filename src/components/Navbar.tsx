@@ -6,7 +6,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="font-heading text-2xl font-bold tracking-tight text-slate-900 drop-shadow-sm">
-          Meenakshi
+          DRx4
         </Link>
 
         {/* Desktop Navigation */}

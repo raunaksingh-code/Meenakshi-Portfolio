@@ -57,7 +57,7 @@ export function Hero() {
           </div>
           
           <h1 className="font-heading text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1]">
-            Meenakshi
+            DRx4
           </h1>
           
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6 font-sans h-12 flex items-center">
